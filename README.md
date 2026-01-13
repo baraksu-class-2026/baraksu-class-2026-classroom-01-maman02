@@ -1,15 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/dX_dCpff)
 ## Grade
 
-[![Grade](https://img.shields.io/badge/Grade-0%25-red)](https://github.com/baraksu-class-2026/baraksu-class-2026-classroom-01-maman02-Hotel/actions/runs/20963240775)
+[![Grade](https://img.shields.io/badge/Grade-0%25-red)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/20965340905)
 
 ## Coding Standards
 
-❌ **Coding Standard Failed (-25 points)** - [View Checkstyle Report](https://github.com/baraksu-class-2026/baraksu-class-2026-classroom-01-maman02-Hotel/actions/runs/20963240775)
+❌ **Coding Standard Failed (-25 points)** - [View Checkstyle Report](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/20965340905)
 
 ## Tests
 
-[📊 View Test Reports](https://github.com/baraksu-class-2026/baraksu-class-2026-classroom-01-maman02-Hotel/actions/runs/20963240775)
+[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/20965340905)
 
 ## AI Code Review
 
