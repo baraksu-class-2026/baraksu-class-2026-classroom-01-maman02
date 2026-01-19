@@ -1,22 +1,25 @@
 ## Grade
 
-[![Grade](https://img.shields.io/badge/Grade-85%25-green)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21141860388) *(Original: 100%, Penalties: -15)*
+[![Grade](https://img.shields.io/badge/Grade-0%25-red)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21146337370)
 
 ## Tests
 
-[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21141860388)
+[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21146337370)
 
 ## AI Code Review
 
-✅ **Code Quality: Excellent!**
+### Feedback for `Hotel.java`:
 
-Your project is well-structured, readable, and logically sound. Here are a couple of minor suggestions to help maintain these high standards:
+❌ **Duplicate Code** (-10 points)
 
-- ❌ **Duplicate Code** (-10 points)
-  - **Methods `checkIn`, `checkOut`, `findAvailableByBeds`, and `findRoomByNumber` in `Hotel`**:
-    - These methods contain similar conditional logic for handling the same set of `HotelRoom` objects. Consider refactoring to reduce repetition by using helper methods or more efficient data structures.
-    
-- ❌ **Magic Numbers** (-5 points)
-  - In `HotelRoom`: The numbers `99` and `1000` used within the `roomNumOk()` method should be replaced with named constants for clarity and easy adjustment, similar to constants used for default values.
+- The methods `checkIn`, `checkOut`, and `findAvailableByBeds` in `Hotel` exhibit similar logic when checking room numbers and occupancy status. Shared logic should be extracted and reused across these methods to avoid duplication.
+  
+- Consider integrating the similar sequence of operations in `findRoomByNumber` and the mentioned methods to streamline room retrieval logic.
 
-Addressing the duplicate code and magic numbers will make your program more maintainable and easier to read and understand for others. Keep up the excellent work! Recommended adjusted grade: 85%
+### Feedback for `HotelRoom.java`:
+
+- ✅ **Code Quality: Excellent!** No issues with magic numbers, syntax, or brace usage in this file. Constants are used appropriately, and the logic is well-structured and readable.
+
+### Overall Recommendation:
+- Revise to eliminate duplicate code in the `Hotel` class by considering common utility methods or logical restructuring. This will improve maintainability and readability of your code. 
+- Adjusted grade: 90%
