@@ -8,9 +8,11 @@ public class HotelRoom {
     private static final int DEF_ROOM_NUM = 999;
     private static final int DEF_NUM_BEDS = 2;
     
+    private static final int INVALID_VALUE = -1;
+    
     public HotelRoom() {
-        setRoomNum(DEF_ROOM_NUM);
-        setNumBeds(DEF_NUM_BEDS);
+        setRoomNum(INVALID_VALUE);
+        setNumBeds(INVALID_VALUE);
     }
 
     public HotelRoom(int roomNum, int numBeds) {
@@ -39,12 +41,16 @@ public class HotelRoom {
     public void setRoomNum(int roomNum) {
         if (roomNumOk(roomNum)) {
             _roomNum = roomNum;
+        } else {
+            _roomNum = DEF_ROOM_NUM;
         }
     }
     
     public void setNumBeds(int numBeds) {
         if (numBedsOk(numBeds)) {
             _numBeds = numBeds;
+        } else {
+            _numBeds = DEF_NUM_BEDS;
         }
     }
     
