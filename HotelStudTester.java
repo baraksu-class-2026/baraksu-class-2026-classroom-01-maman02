@@ -1,29 +1,29 @@
 public class HotelStudTester {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		HotelRoom a = new HotelRoom(307, 4);
-		HotelRoom b = new HotelRoom(205, 3);
-		HotelRoom c = new HotelRoom(402, 2);
+        HotelRoom a = new HotelRoom(307, 4);
+        HotelRoom b = new HotelRoom(205, 3);
+        HotelRoom c = new HotelRoom(402, 2);
 
-		// === display ===
-		System.out.println("== display ==");
-		System.out.println("Expected:");
-		System.out.println("Room 307, 4 Beds: Available");
-		System.out.println("Room 205, 3 Beds: Available");
-		System.out.println("Room 402, 2 Beds: Available");
-		System.out.println("Actual  :");
-		Hotel.display(a, b, c);
+        // === display ===
+        System.out.println("== display ==");
+        System.out.println("Expected:");
+        System.out.println("Room 307, 4 Beds: Available");
+        System.out.println("Room 205, 3 Beds: Available");
+        System.out.println("Room 402, 2 Beds: Available");
+        System.out.println("Actual  :");
+        Hotel.display(a, b, c);
 
-		// === displaySorted ===
-		System.out.println("\n== displaySorted ==");
-		System.out.println("Expected:");
-		System.out.println("Room 205, 3 Beds: Available");
-		System.out.println("Room 307, 4 Beds: Available");
-		System.out.println("Room 402, 2 Beds: Available");
-		System.out.println("Actual  :");
-		Hotel.displaySorted(a, b, c);
-		
-      // === findRoomByNumber (קיים) ===
+        // === displaySorted ===
+        System.out.println("\n== displaySorted ==");
+        System.out.println("Expected:");
+        System.out.println("Room 205, 3 Beds: Available");
+        System.out.println("Room 307, 4 Beds: Available");
+        System.out.println("Room 402, 2 Beds: Available");
+        System.out.println("Actual  :");
+        Hotel.displaySorted(a, b, c);
+        
+      // === findRoomByNumber  ===
       System.out.println("\n== findRoomByNumber(205) ==");
       System.out.println("Expected: Room 205, 3 Beds: Available");
       System.out.println("Actual  : " + Hotel.findRoomByNumber(205, a, b, c));
@@ -46,5 +46,5 @@ public class HotelStudTester {
       System.out.print("Actual  : "); 
       Hotel.findAvailableByBeds(2, a, b, c);
 
-	}
+    }
 }
