@@ -4,9 +4,9 @@ public class HotelRoom {
     private boolean _occupied;
     private String _guest;
     
-    private static final String DEF_GUEST = "";
-    private static final int DEF_ROOM_NUM = 999;
-    private static final int DEF_NUM_BEDS = 2;
+    private static final String DEFAULT_GUEST = "";
+    public static final int DEFAULT_ROOM_NUM = 999;
+    public static final int DEFAULT_NUM_BEDS = 2;
     
     private static final int MIN_ROOM_NUM = 99;
     private static final int MAX_ROOM_NUM = 1000;
@@ -25,7 +25,7 @@ public class HotelRoom {
         setRoomNum(roomNum);
         setNumBeds(numBeds);
         _occupied = false;
-        _guest = DEF_GUEST;
+        _guest = DEFAULT_GUEST;
     }
 
     public int getRoomNum() {
@@ -48,7 +48,7 @@ public class HotelRoom {
         if (roomNumOk(roomNum)) {
             _roomNum = roomNum;
         } else {
-            _roomNum = DEF_ROOM_NUM;
+            _roomNum = DEFAULT_ROOM_NUM;
         }
     }
     
@@ -56,7 +56,7 @@ public class HotelRoom {
         if (numBedsOk(numBeds)) {
             _numBeds = numBeds;
         } else {
-            _numBeds = DEF_NUM_BEDS;
+            _numBeds = DEFAULT_NUM_BEDS;
         }
     }
     
@@ -100,6 +100,6 @@ public class HotelRoom {
     
     public void checkOut() {
         _occupied = false;
-        _guest = DEF_GUEST;
+        _guest = DEFAULT_GUEST;
     }
 }
