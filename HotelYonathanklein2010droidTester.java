@@ -1,8 +1,7 @@
-
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class HotelRoomTest {
+public class HotelYonathanklein2010droidTester {
 
     /* ========= Constructor & getters ========= */
 
