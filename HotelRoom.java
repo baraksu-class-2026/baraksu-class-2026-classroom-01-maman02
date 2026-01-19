@@ -1,6 +1,4 @@
-public class HotelRoom
-{
-    // instance variables - replace the example below with your own
+public class HotelRoom {
     private int _roomNum;
     private int _numBeds;
     private boolean _occupied;
