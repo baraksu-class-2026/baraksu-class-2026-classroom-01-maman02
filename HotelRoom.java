@@ -77,6 +77,9 @@ public class HotelRoom {
     }
     
     public boolean equals(HotelRoom other) {
+        if (other == null) {
+            return false;
+        }
         return _roomNum == other._roomNum && _numBeds == other._numBeds;
     }
     
