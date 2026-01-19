@@ -1,26 +1,22 @@
 ## Grade
 
-[![Grade](https://img.shields.io/badge/Grade-84%25-green)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21141343033) *(Original: 94%, Penalties: -10)*
+[![Grade](https://img.shields.io/badge/Grade-85%25-green)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21141860388) *(Original: 100%, Penalties: -15)*
 
 ## Tests
 
-[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21141343033)
+[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21141860388)
 
 ## AI Code Review
 
-Let's review the provided files for potential issues.
+✅ **Code Quality: Excellent!**
 
---- File: ./Hotel.java ---
+Your project is well-structured, readable, and logically sound. Here are a couple of minor suggestions to help maintain these high standards:
 
-❌ **Duplicate Code** (-10 points)
-- There is repetitive logic in the `checkIn`, `checkOut`, and `findAvailableByBeds` methods where similar checks and operations (comparing room numbers and bed numbers, checking occupancy) are performed on the `HotelRoom` objects. This repeated code could be refactored into a shared method to streamline the logic and reduce duplication.
+- ❌ **Duplicate Code** (-10 points)
+  - **Methods `checkIn`, `checkOut`, `findAvailableByBeds`, and `findRoomByNumber` in `Hotel`**:
+    - These methods contain similar conditional logic for handling the same set of `HotelRoom` objects. Consider refactoring to reduce repetition by using helper methods or more efficient data structures.
+    
+- ❌ **Magic Numbers** (-5 points)
+  - In `HotelRoom`: The numbers `99` and `1000` used within the `roomNumOk()` method should be replaced with named constants for clarity and easy adjustment, similar to constants used for default values.
 
-No other issues found in this file.
-
---- File: ./HotelRoom.java ---
-
-The implementation appears to be correct, and no issues require code changes within this file.
-
-Therefore, your main focus should be on reducing the duplicate code in the `Hotel` class methods to increase maintainability and readability. Keep up the good work on understanding your program's structure and logic!
-
-Recommended adjusted grade: 90%
+Addressing the duplicate code and magic numbers will make your program more maintainable and easier to read and understand for others. Keep up the excellent work! Recommended adjusted grade: 85%
