@@ -43,6 +43,7 @@ class Hotel {
                 checkOut(roomNum, a, b, c);
                 break;
             case 4:
+                System.out.println("Enter requested number of beds (2-4):");
                 beds = reader.nextInt();
                 findAvailableByBeds(beds, a, b, c);
                 break;
@@ -89,35 +90,22 @@ class Hotel {
     }
 
     public static void checkIn(String guestName, int roomNum, HotelRoom a, HotelRoom b, HotelRoom c) {
-        boolean processed = false;
-        if (a != null && a.getRoomNum() == roomNum && !a.isOccupied()) {
-            a.checkIn(guestName);
-            System.out.println(a);
-            processed = true;
-        } else if (b != null && b.getRoomNum() == roomNum && !b.isOccupied()) {
-            b.checkIn(guestName);
-            System.out.println(b);
-            processed = true;
-        } else if (c != null && c.getRoomNum() == roomNum && !c.isOccupied()) {
-            c.checkIn(guestName);
-            System.out.println(c);
-            processed = true;
-        }
-        if (!processed) {
+        HotelRoom room = findRoomByNumber(roomNum, a, b, c);
+
+        if (room != null && !room.isOccupied()) {
+            room.checkIn(guestName);
+            System.out.println(room);
+        } else {
             System.out.println("Error: Room not available or not found");
         }
     }
 
     public static void checkOut(int roomNum, HotelRoom a, HotelRoom b, HotelRoom c) {
-        if (a != null && a.getRoomNum() == roomNum) {
-            a.checkOut();
-            System.out.println(a);
-        } else if (b != null && b.getRoomNum() == roomNum) {
-            b.checkOut();
-            System.out.println(b);
-        } else if (c != null && c.getRoomNum() == roomNum) {
-            c.checkOut();
-            System.out.println(c);
+        HotelRoom room = findRoomByNumber(roomNum, a, b, c);
+
+        if (room != null) {
+            room.checkOut();
+            System.out.println(room);
         } else {
             System.out.println("Error: Room not available or not found");
         }
