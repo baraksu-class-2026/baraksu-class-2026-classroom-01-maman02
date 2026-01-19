@@ -8,6 +8,12 @@ public class HotelRoom {
     private static final int DEF_ROOM_NUM = 999;
     private static final int DEF_NUM_BEDS = 2;
     
+    private static final int MIN_ROOM_NUM = 99;
+    private static final int MAX_ROOM_NUM = 1000;
+    
+    private static final int MIN_NUM_BEDS = 2;
+    private static final int MAX_NUM_BEDS = 4;
+    
     private static final int INVALID_VALUE = -1;
     
     public HotelRoom() {
@@ -55,11 +61,11 @@ public class HotelRoom {
     }
     
     private boolean roomNumOk(int roomNum) {
-        return roomNum > 99 && roomNum < 1000;
+        return roomNum > MIN_ROOM_NUM && roomNum < MAX_ROOM_NUM;
     }
     
     private boolean numBedsOk(int numbed) {
-        return numbed >= 2 && numbed <= 4;
+        return numbed >= MIN_NUM_BEDS && numbed <= MAX_NUM_BEDS;
     }
     
     public String toString() {
