@@ -1,10 +1,10 @@
 ## Grade
 
-[![Grade](https://img.shields.io/badge/Grade-0%25-red)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21146863995)
+[![Grade](https://img.shields.io/badge/Grade-0%25-red)](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21147300737)
 
 ## Tests
 
-[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21146863995)
+[📊 View Test Reports](https://github.com/baraksu-class-2026/maman02-YotamOphir/actions/runs/21147300737)
 
 ## AI Code Review
 
