@@ -84,10 +84,16 @@ public class HotelRoom {
     }
     
     public boolean before(HotelRoom other) {
+        if (other == null) {
+            return false;
+        }
         return _roomNum < other._roomNum;
     }
     
     public boolean after(HotelRoom other) {
+        if (other == null) {
+            return false;
+        }
         return other.before(this);
     }
     
